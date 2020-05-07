@@ -34,6 +34,17 @@ Es así que planteamos enfatizar el rol del triaje en el protocolo de atención 
 
 Nuestra propuesta CovidNet-Perú surge como una solución tecnológica que facilitaría la labor de triaje a través de la asistencia inteligente para la rápida identificación y vigilancia de personas infectadas por el nuevo coronavirus. Esta tecnología libre se presenta como una alternativa de bajo costo, fácil acceso y confiable lo cual permite la reducción del burnout en el personal médico. 
 
+Se realizo algunas indagaciones para ver que tal factible es la propuesta presentada con respecto a las pruebas rapidas implementadas en Perú donde:
+
+#### Tabla de comparación
+
+| Casos | CovidNet-RxTorax | PruebasRapidas
+| --- | --- | --- |
+| **Costos** | 36 PEN | 16 PEN | 
+| **Tiempo** | 15 MIN | 15 MIN | 
+| **Sensibilidad** | 92.9% | 91.8% | 
+| **Especificidad** | 96.0% | 96.4% | 
+
 
 ## Resultados Previos
 
@@ -46,7 +57,7 @@ Hemos generado una validación previa del modelo de inteligencia artificial, ins
 <img src="imagenes/covidnet-peru.jpg" align="center" />
 
 Nuestra solución integra tres componentes de identificación (o modelos de redes neuronales convolucionales - CNN): el modelo de discriminación de imágenes radiográficas, el modelo de detección de radiografías tipo neumonía viral relacionadas a COVID-19 y, por último, el modelo de validación que permite verificar lesiones respiratorias adicionales (aún en desarrollo). 
-
+	
 De este modo fue diseñada la arquitectura de nuestro algoritmo COVIDNet-Perú. Adicionalmente hemos programado una interfaz chatbot en Facebook Messenger donde mediante preguntas se van ponderando las respuestas en base a los criterios clínicos-epidemiológicos para un correcto triaje prevío al analisis por IA. 
 
 Con el fin de comprobar la veracidad del pre-entrenamiento, hemos generado un primer análisis a partir de resultados obtenidos de 78 imagenes radiográficas de tórax, se respetó el carácter anónimo de los pacientes. 
